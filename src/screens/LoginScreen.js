@@ -1,0 +1,1 @@
+import { View, Text, Image, StyleSheet, TextInput } from "react-native";
