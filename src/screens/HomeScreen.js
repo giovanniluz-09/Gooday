@@ -7,7 +7,7 @@ export default function HomeScreen({ navigation }) {
             <Text style={styles.title}>Ótimo dia!</Text>
             <Text style={styles.subtitle}>Como deseja acessar?</Text>
             
-            <TouchableOpacity style={styles.button1}>
+            <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate("LoginScreen")}>
                 <Image style={styles.google} source={require("../../assets/Google.png")} />
                 <Text style={styles.textButton1}>Como deseja acessar?</Text>
             </TouchableOpacity>
