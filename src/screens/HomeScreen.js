@@ -7,12 +7,12 @@ export default function HomeScreen({ navigation }) {
             <Text style={styles.title}>Ótimo dia!</Text>
             <Text style={styles.subtitle}>Como deseja acessar?</Text>
             
-            <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate("LoginScreen")}>
+            <TouchableOpacity style={styles.button1} >
                 <Image style={styles.google} source={require("../../assets/Google.png")} />
                 <Text style={styles.textButton1}>Como deseja acessar?</Text>
             </TouchableOpacity>
                 
-            <TouchableOpacity style={styles.button2}>
+            <TouchableOpacity style={styles.button2} onPress={() => navigation.navigate("LoginScreen")}>
                 <Text>Outras opções</Text>
             </TouchableOpacity>
         </View>
